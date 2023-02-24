@@ -12,14 +12,14 @@ import com.spring.cloudFeign.studentService.bean.Book;
 @FeignClient(name = "BOOK=-SERVICE")
 public interface BookRestConsumer {
 	@GetMapping("/book/data")
-	public String getBookDate();
+	public String getBookData();
 
 	@GetMapping("/book/{bookId}")
 	public Book getBookById(@PathVariable Integer bookId);
 
 	@GetMapping("/book/getall")
-	public List<Book> gettAllBooks();
+	public List<Book> getAllBooks();
 
 	@GetMapping("/book/entity")
-	public ResponseEntity<String> getEnitityDate();
+	public ResponseEntity<String> getEntityData();
 }
