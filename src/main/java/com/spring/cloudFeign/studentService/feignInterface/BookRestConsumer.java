@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.spring.cloudFeign.studentService.bean.Book;
 
-@FeignClient(name = "BOOK=-SERVICE")
+@FeignClient(name = "BOOK-SERVICE")
 public interface BookRestConsumer {
 	@GetMapping("/book/data")
 	public String getBookData();

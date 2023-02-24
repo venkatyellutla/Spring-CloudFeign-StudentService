@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.spring.cloudFeign.studentService.feignInterface.BookRestConsumer;
 @RestController
-@RequestMapping(name = "/student")
+@RequestMapping("/student")
 public class StudentRestController {
 	@Autowired
 	private BookRestConsumer bookRestConsumer;
